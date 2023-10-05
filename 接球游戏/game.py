@@ -37,8 +37,6 @@ font = pygame.font.Font(r"./Arial.ttf", 60)  # 设置字体（前者是字体路
 points = 1  # 一次接球的加分
 count = 0  # 接球得分的次数
 
-# size1 = board.get_size() #获取图片大小
-# print(size1)
 while True:
     board_rect.top = h - 17
     for event in pygame.event.get():  # pygame.event.get() 从事件队列中取出事件，并从队列中删除该事件
@@ -62,7 +60,7 @@ while True:
             elif event.key == pygame.K_RIGHT:  # 挡板右移
                 if board_rect.right >= 186 and board_rect.right < w:
                     board_rect.right += board_x
-                elif board_rect.right >= w:  # 判断挡板右边的坐标是否大于屏幕的宽度                        board_rect.right = w
+                elif board_rect.right >= w:  # 判断挡板右边的坐标是否大于屏幕的宽度
                     board_rect.bottom += board_y
 
         # 鼠标控制挡板
