@@ -4,13 +4,11 @@ import random
 from pygame.locals import *
 
 # 游戏设置
-# WIDTH, HEIGHT = 500, 500
 background_color = (255, 255, 255)
 BLACK = (0, 0, 0)
 FPS = 30
 
 # 定义拼图碎片的大小和数量
-# PIECE_SIZE = 200
 ROWS, COLS = 3, 3
 cell_nums = ROWS * COLS
 max_rand_time = 100
